@@ -1,26 +1,30 @@
-# Currículum Vitae — José Federico Castro Tramontina
+# Currículum Vitae IT — José Federico Castro Tramontina
 
 Proyecto HTML/CSS preparado para:
 
-- visualización en navegador
+- visualización en navegador;
 - lectura por sistemas ATS;
 - exportación a PDF en una página A4;
-- posterior traducción al inglés.
+- presentación profesional para el sector IT;
+- versiones en español e inglés.
 
 ## Estructura
 
 ```text
-resume/
+resume_it/
 ├── index.html
+├── index_es.html
+├── index_en.html
 ├── css/
 │   ├── style.css
 │   └── print.css
-└── thumbnails/
-    ├── email.svg
-    ├── github.svg
-    ├── linkedin.svg
-    ├── location.svg
-    └── whatsapp.svg
+├── thumbnails/
+│   ├── email.svg
+│   ├── github.svg
+│   ├── linkedin.svg
+│   ├── location.svg
+│   └── whatsapp.svg
+└── pdf/
 ```
 
 ## Uso
@@ -39,4 +43,4 @@ Para exportar:
 
 ## Observación
 
-Los datos de contacto aparecen como texto visible además de estar enlazados. Esto mejora la accesibilidad, la lectura por ATS y la utilidad del PDF impreso.
+Este proyecto corresponde a la versión profesional del currículum vitae, orientada al ámbito de Tecnologías de la Información (IT). Los datos de contacto aparecen como texto visible además de estar enlazados. Esto mejora la accesibilidad, la lectura por ATS y la utilidad del PDF impreso.
