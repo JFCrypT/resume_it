@@ -2,7 +2,7 @@
 
 Proyecto HTML/CSS preparado para:
 
-- visualización en navegador;
+- visualización en navegador
 - lectura por sistemas ATS;
 - exportación a PDF en una página A4;
 - posterior traducción al inglés.
@@ -10,7 +10,7 @@ Proyecto HTML/CSS preparado para:
 ## Estructura
 
 ```text
-cv_jose_federico_castro_tramontina/
+resume/
 ├── index.html
 ├── css/
 │   ├── style.css
