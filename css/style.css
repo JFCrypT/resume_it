@@ -51,7 +51,7 @@ a:focus-visible {
     width: 210mm;
     min-height: 297mm;
     margin: 18px auto;
-    padding: 10mm 12mm 9mm;
+    padding: 8.5mm 12mm;
     background: var(--paper);
     box-shadow: 0 4px 22px rgba(0, 0, 0, 0.12);
 }
@@ -220,6 +220,29 @@ section[aria-labelledby="perfil"] > p {
     font-weight: 700;
     line-height: 1.2;
     white-space: nowrap;
+}
+
+/*
+ * Los ítems de experiencia usan exactamente el mismo tamaño
+ * que los títulos de los puestos (h3). No modifica ninguna
+ * otra fuente del CV.
+ */
+
+.experience-list {
+    margin: 2px 0 0;
+    padding-left: 21px;
+}
+
+.experience-list li {
+    margin: 0;
+    font-size: 11.7px;
+    line-height: 1.36;
+    font-weight: 400;
+}
+
+.experience-list strong {
+    font-size: inherit;
+    font-weight: 700;
 }
 
 /* ==========================================================

@@ -7,9 +7,12 @@ html,
 body {
     width: 100%;
     height: 100%;
+
     margin: 0;
     padding: 0;
+
     overflow: hidden;
+
     background: #ffffff;
 }
 
@@ -20,20 +23,27 @@ body {
 
 .cv {
     width: auto;
-    height: 296.5mm;
-    min-height: 0;
-    max-height: 296.5mm;
+    height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
 
     margin: 0;
-    padding: 5mm 12mm 12mm;
+
+    /*
+     * Compensación óptica:
+     * 6 mm arriba + 11 mm abajo = 17 mm totales.
+     * Se conserva exactamente la misma altura útil anterior.
+     */
+    padding: 6mm 12mm 11mm;
 
     overflow: hidden;
+
     background: #ffffff;
     box-shadow: none;
 }
 
 /* ==========================================================
-   Forzar el mismo layout de dos columnas que en pantalla
+   Mantener las dos columnas de competencias técnicas
    ========================================================== */
 
 .skills {
@@ -42,6 +52,44 @@ body {
     column-gap: 21px;
     row-gap: 1px;
 }
+
+/* ==========================================================
+   Ajuste vertical exclusivo para impresión
+   No modifica ningún tamaño de fuente
+   ========================================================== */
+
+section {
+    margin-top: 7px;
+}
+
+h2 {
+    margin-bottom: 4px;
+}
+
+.entry {
+    margin-bottom: 5px;
+}
+
+.experience-list {
+    margin-top: 1px;
+}
+
+.projects p {
+    margin-bottom: 3px;
+}
+
+.education p {
+    margin-bottom: 2px;
+}
+
+.cv-footer {
+    margin-top: 5px;
+    padding-top: 4px;
+}
+
+/* ==========================================================
+   Enlaces y control de cortes
+   ========================================================== */
 
 a {
     color: inherit;
@@ -60,7 +108,8 @@ article,
 h1,
 h2,
 h3,
-p {
+p,
+li {
     orphans: 2;
     widows: 2;
 }
