@@ -65,6 +65,13 @@ a:focus-visible {
     border-bottom: 2px solid var(--accent);
 }
 
+.header-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
 h1,
 h2,
 h3,
@@ -78,6 +85,106 @@ h1 {
     font-size: 29px;
     line-height: 1.05;
     letter-spacing: 0.1px;
+}
+
+/* ==========================================================
+   Botón de descarga PDF estilo Windows XP
+   ========================================================== */
+
+.pdf-download {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    min-width: 116px;
+    height: 25px;
+    margin: 0;
+    padding: 2px 9px;
+
+    color: #111111;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #fafbfd 18%,
+            #edf0f5 46%,
+            #dce1e8 72%,
+            #cbd1da 100%
+        );
+
+    border: 1px solid #316ac5;
+    border-radius: 4px;
+
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 1),
+        inset -1px -1px 0 rgba(103, 116, 136, 0.55),
+        0 1px 1px rgba(0, 0, 0, 0.18);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.pdf-download img {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    object-fit: contain;
+}
+
+.pdf-download:hover,
+.pdf-download:focus-visible {
+    color: #111111;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 20%,
+            #f2f6fb 48%,
+            #e1eaf5 74%,
+            #ccdced 100%
+        );
+
+    border-color: #0a4fa3;
+
+    text-decoration: none;
+    outline: none;
+}
+
+.pdf-download:focus-visible {
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 1),
+        inset -1px -1px 0 rgba(103, 116, 136, 0.55),
+        0 0 0 2px rgba(49, 106, 197, 0.25);
+}
+
+.pdf-download:active {
+    padding-top: 3px;
+    padding-bottom: 1px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #c9ced7 0%,
+            #dce1e8 38%,
+            #eef1f5 72%,
+            #fafbfc 100%
+        );
+
+    box-shadow:
+        inset 1px 1px 1px rgba(45, 54, 68, 0.45),
+        inset -1px -1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .headline {
@@ -305,5 +412,13 @@ section[aria-labelledby="perfil"] > p {
 
     .date {
         margin-top: 2px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 }
