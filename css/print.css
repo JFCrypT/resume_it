@@ -31,10 +31,10 @@ body {
 
     /*
      * Compensación óptica:
-     * 6 mm arriba + 11 mm abajo = 17 mm totales.
-     * Se conserva exactamente la misma altura útil anterior.
+     * Ajuste vertical para conservar el CV completo en una sola hoja A4
+     * sin reducir tamaños de fuente.
      */
-    padding: 3mm 12mm 9mm;
+    padding: 3mm 12mm 5mm;
 
     overflow: hidden;
 
@@ -67,15 +67,15 @@ body {
    ========================================================== */
 
 section {
-    margin-top: 7px;
+    margin-top: 6px;
 }
 
 h2 {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .entry {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .experience-list {
@@ -83,16 +83,16 @@ h2 {
 }
 
 .projects p {
-    margin-bottom: 3px;
-}
-
-.education p {
     margin-bottom: 2px;
 }
 
+.education p {
+    margin-bottom: 1px;
+}
+
 .cv-footer {
-    margin-top: 5px;
-    padding-top: 4px;
+    margin-top: 3px;
+    padding-top: 2px;
 }
 
 /* ==========================================================

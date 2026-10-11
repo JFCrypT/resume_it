@@ -272,7 +272,12 @@ p {
    ========================================================== */
 
 section[aria-labelledby="perfil"] > p,
-section[aria-labelledby="profile"] > p {
+section[aria-labelledby="profile"] > p,
+.experience-list li,
+.projects p,
+.education p,
+section[aria-labelledby="docencia"] > p,
+section[aria-labelledby="teaching"] > p {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
